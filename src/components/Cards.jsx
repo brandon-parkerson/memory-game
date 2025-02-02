@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function Cards() {
+export default function Cards({ score, setScore }) {
     function shuffle(array) {
         let newArray = [...array];
         let currentIndex = newArray.length;
@@ -15,7 +15,6 @@ export default function Cards() {
     }
 
     const [giphs, setGiphs] = useState([]);
-    const [score, setScore] = useState(0);
     const [picked, setPicked] = useState([]);
 
     useEffect(() => {
@@ -40,14 +39,8 @@ export default function Cards() {
         setGiphs((prevGiphs) => shuffle(prevGiphs));
     }
 
-    // Log score after update
-    useEffect(() => {
-        console.log("Score updated:", score);
-    }, [score]);
-
     return (
         <>
-            <h2>Score: {score}</h2>
             <div className="cards-container">
                 {giphs.map((giph) => (
                     <div key={giph.id} className="card">
