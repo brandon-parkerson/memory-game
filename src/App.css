@@ -1,3 +1,10 @@
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +24,7 @@
   grid-template-columns: repeat(6, 1fr);
   border: 1px solid black;
   min-height: fit-content;
+  width: 75vw;
 }
 
 .scores-container {
@@ -37,6 +45,10 @@
 
 .card:hover {
   cursor: pointer;
+}
+
+h1 {
+  font-family: "Cedarville Cursive", Arial;
 }
 
 
