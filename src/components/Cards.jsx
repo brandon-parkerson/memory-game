@@ -18,7 +18,7 @@ export default function Cards() {
         <div className="cards-container">
              
          {giphs.map((giph) => (
-            <img key={giph.id} src={giph.images.fixed_height.url} alt={giph.title} className="giph" />
+            <div key={giph.id} className="card"><img src={giph.images.fixed_height.url} alt={giph.title} className="giph" /></div>
         ))} 
       
         </div>

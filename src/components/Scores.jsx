@@ -1,8 +1,8 @@
 export default function Scores() {
     return (
         <div className="scores-container">
-            <p>Score:</p>
-            <p>High Score:</p>
+            <h2>Score: </h2>
+            <h2>High Score:</h2>
         </div>
     )
 }
